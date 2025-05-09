@@ -29,7 +29,8 @@ body {
 }
 
 @keyframes blinkGreen {
-  0%, 100% {
+  0%,
+  100% {
     box-shadow: 0 0 10px 4px rgba(175, 222, 175, 0.6);
   }
   50% {
@@ -90,7 +91,6 @@ body {
 .button-wrapper:hover .button-foreground {
   transform: rotate(0deg);
 }
-
 
 .button-foreground i {
   rotate: -45deg;
@@ -214,12 +214,87 @@ body {
   color: #555;
 }
 
+.latest-blog {
+  margin: 50px 100px;
+  color: rgba(101, 89, 69, 1);
+}
+.story-educare {
+  margin-top: 150px;
+}
+.story-educare-div {
+  width: 90%;
+  margin-left: 100px;
+}
+.story-edu-card {
+  background-color: rgba(255, 243, 225, 1);
+  width: 470px;
+}
 
-.latest-blog{
-  margin: 50px 100px; color: rgba(101, 89, 69, 1);
+.vision-img {
+  height: 180px;
+  margin-top: -80px;
+  margin-left: -10px;
 }
+.our-way-thinking {
+  background-color: rgba(249, 247, 244, 1);
+  padding: 30px 100px;
+}
+.youtube-icon {
+  margin-top: 200px;
+  margin-left: -25px;
+}
+.master-ielts{
+  margin: 20px 100px;
+}
+
 @media screen and (max-width: 612px) {
-  .latest-blog{
-  margin: 50px 30px; color: rgba(101, 89, 69, 1);
+  .latest-blog {
+    margin: 50px 30px;
+    color: rgba(101, 89, 69, 1);
+  }
+  .story-educare {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .story-educare-div {
+    width: 90%;
+    margin: auto;
+  }
+  .story-edu-card {
+    background-color: rgba(255, 243, 225, 1);
+    width: 95%;
+  }
+  .vision-img {
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -20px;
+  }
+  .our-way-thinking {
+    background-color: rgba(249, 247, 244, 1);
+    padding: 30px 10px;
+  }
+  .youtube-icon {
+  margin-top:50px;
+  height: 40px;
+  width: 40px;
+  margin-left: -25px;
 }
+.master-ielts{
+  margin: 20px 40px;
+}
+
+}
+
+
+.hide-scrollbar {
+  overflow: hidden; /* disables both scrollbars */
+}
+
+/* If you want to keep scroll but hide scrollbar visually (optional) */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;    /* Firefox */
 }

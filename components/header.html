@@ -1,62 +1,36 @@
-<nav
-  class="navbar navbar-expand-lg navbar-light bg-prime px-4"
-  style="height: 75px"
->
-  <div class="d-flex justify-content-between w-100 text-white">
-    <div class="d-flex align-items-center">
-      <img
-        src="assests/images/hero/logo.png"
-        alt=""
-        style="width: 44px; height: 45px"
-        class="object-fit-contain"
-      />
-      <h3 class="text-white ms-1" style="font-size: 26px">Educare</h3>
-    </div>
-    <button
-      class="navbar-toggler"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-    >
+<nav class="navbar navbar-expand-lg navbar-light bg-prime px-4" style="height: auto;">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center text-white" href="#">
+      <img src="assests/images/hero/logo.png" alt="" style="width: 44px; height: 45px" class="object-fit-contain" />
+      <h3 class="text-white ms-1 mb-0" style="font-size: 26px">Educare</h3>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="position-relative" id="navbarNav">
-      <ul class="navbar-nav ms-auto gap-4">
+    <div class="collapse navbar-collapse " id="navbarNavDropdown">
+      <ul class="navbar-nav m-auto gap-lg-4 gap-2">
         <li class="nav-item">
           <a class="nav-link text-white" href="#">About us</a>
         </li>
-        <li class="nav-item position-relative">
-          <a
-            id="coursesToggle"
-            class="nav-link text-white"
-            href="javascript:void(0)"
-          >
-            Courses
-            <i class="fa-solid fa-chevron-down" style="font-size: 10px"></i>
+        <li class="nav-item dropdown position-relative">
+          <a id="coursesToggle" class="nav-link text-white" href="javascript:void(0)">
+            Courses <i class="fa-solid fa-chevron-down" style="font-size: 10px"></i>
           </a>
-
-          <div
-            id="coursesDropdown"
-            class="dropdown-content position-absolute py-2 rounded shadow mt-3 text-black px-2 text-decoration-none"
-            style="
-              display: none;
-              top: 100%;
-              left: 0;
-              min-width: 200px;
-              z-index: 1000;
-            "
-          >
-          <div class="d-flex justify-content-between px-2 align-items-center gap-1 " style="font-size: 14px; cursor: pointer;">
-            <a class="d-block text-decoration-none py-2 border-bottom" style="color: rgba(101, 89, 69, 1);">For School Students</a>
-            <i class="fa-solid fa-chevron-right"></i>
-          </div>
-          <div class="d-flex justify-content-between px-2 align-items-center gap-1 " style="font-size: 14px; cursor: pointer;">
-            <a class="d-block text-decoration-none py-2 border-bottom" style="color: rgba(101, 89, 69, 1);">For Kids</a>
-            <i class="fa-solid fa-chevron-right"></i>
-          </div>
-          <div class="d-flex justify-content-between px-2 align-items-center gap-1 " style="font-size: 14px; cursor: pointer;">
-            <a class="d-block text-decoration-none py-2" style="color: rgba(101, 89, 69, 1);">other </a>
-            <i class="fa-solid fa-chevron-right"></i>
-          </div>
+          <div id="coursesDropdown" class="dropdown-content position-absolute py-2 rounded shadow mt-3 text-black px-2"
+            style="display: none; top: 100%; left: 0; min-width: 200px; z-index: 1000; background-color: rgba(255, 243, 225, 1);">
+            <div class="d-flex justify-content-between px-2 align-items-center gap-1" style="font-size: 14px; cursor: pointer;">
+              <a class="d-block text-decoration-none py-2 border-bottom" style="color: rgba(101, 89, 69, 1);">For School Students</a>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="d-flex justify-content-between px-2 align-items-center gap-1" style="font-size: 14px; cursor: pointer;">
+              <a class="d-block text-decoration-none py-2 border-bottom" style="color: rgba(101, 89, 69, 1);">For Kids</a>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="d-flex justify-content-between px-2 align-items-center gap-1" style="font-size: 14px; cursor: pointer;">
+              <a class="d-block text-decoration-none py-2" style="color: rgba(101, 89, 69, 1);">Other</a>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
           </div>
         </li>
         <li class="nav-item">
@@ -69,40 +43,14 @@
           <a class="nav-link text-white" href="#">Payments</a>
         </li>
       </ul>
-    </div>
 
-    <div class="d-flex align-items-center gap-4">
-      <div
-        class="d-flex flex-column gap-1 align-items-start justify-content-center"
-        style="height: 10px"
-      >
-        <small class=""><i class="fas fa-phone"></i> +974 55555 3456</small>
-        <small class=""
-          ><i class="fa-solid fa-envelope"></i> &nbsp;info@educare.qas</small
-        >
+      <div class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-3 ms-lg-4 mt-4 mt-lg-0">
+        <div class="d-flex flex-column text-white" style="font-size: 14px;">
+          <span><i class="fas fa-phone"></i> +974 55555 3456</span>
+          <span><i class="fa-solid fa-envelope"></i> info@educare.qas</span>
+        </div>
+        <button class="btn btn-light text-prime rounded-2 px-4 py-2">Contact Us</button>
       </div>
-      <button class="rounded-2 border-0 px-4 py-2 text-prime">
-        Contact Us
-      </button>
     </div>
   </div>
 </nav>
-
-<script>
-  const toggle = document.getElementById("coursesToggle");
-  const dropdown = document.getElementById("coursesDropdown");
-
-  if (toggle && dropdown) {
-    toggle.addEventListener("click", () => {
-      dropdown.style.display =
-        dropdown.style.display === "block" ? "none" : "block";
-      dropdown.style.backgroundColor = "rgba(255, 243, 225, 1)";
-    });
-
-    document.addEventListener("click", function (event) {
-      if (!toggle.contains(event.target) && !dropdown.contains(event.target)) {
-        dropdown.style.display = "none";
-      }
-    });
-  }
-</script>
