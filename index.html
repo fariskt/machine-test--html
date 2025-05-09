@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/7ed9dfd954.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Educare</title>
+    <link rel="stylesheet" href="assests/css/index.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <section class="hero text-center text-md-start py-5">
+      <div class="d-flex flex-column align-items-center">
+        <h1
+          id="rotating-text"
+          class="text-prime text-center"
+          style="font-size: 60px"
+        >
+          <b class="fw-700 text-center"> Personalized One-to-One </b><br />
+          <span class="text-highlight fw-normal">Tutoring at Our Center</span>
+        </h1>
+        <div class="dot-container">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <div class="position-absolute blinking-effect" style="right: 40px;">
+  <img src="./assests/images/hero/whatsapp-icon.png" alt="">
+</div>
+
+        <div class="d-flex flex-row mx-auto justify-content-center">
+          <img
+            src="./assests/images/hero/teacher-girl.svg"
+            alt="Tutor and Student"
+            class="img-fluid animate-jump1"
+            style="width: 500px"
+          />
+          <div class="btn-wrapper mt-5 d-flex flex-column align-items-center">
+            <div class="button-wrapper">
+              <div class="button-background"></div>
+              <button class="button-foreground">
+                Book a Free Demo Class <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+            <div class="mt-5">
+              <h4 class="text-prime text-center">Curriculums we offer:</h4>
+              <div class="slider-wrapper">
+                <div class="slider-track" id="sliderTrack">
+                  <img src="./assests/images/hero/firstcurriculum.png" alt="" />
+                  <img src="./assests/images/hero/pearson-logo 10.png" alt="" />
+                  <img
+                    src="./assests/images/hero/secondcurriculum.png"
+                    alt=""
+                  />
+                  <img src="./assests/images/hero/american-ed.png" alt="" />
+                  <img src="./assests/images/hero/canadian-ed.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            src="./assests/images/hero/hero-2.svg"
+            alt="Tutor and Student"
+            class="img-fluid animate-jump2"
+            style="width: 500px"
+          />
+        </div>
+      </div>
+      <div
+        class="d-flex justify-content-evenly p-3"
+        style="background-color: rgba(255, 243, 225, 1)"
+      >
+        <div class="d-flex gap-3">
+          <img
+            src="./assests/images/hero/user-profile.png"
+            alt=""
+            class="h-75"
+          />
+          <h5>Personal Attention</h5>
+        </div>
+        <div style="width: 1px; height: 30px" class="bg-prime"></div>
+        <div class="d-flex gap-3">
+          <img src="./assests/images/hero/trophy.png" alt="" class="h-75" />
+          <h5>Growth Mindset</h5>
+        </div>
+        <div style="width: 1px; height: 30px" class="bg-prime"></div>
+
+        <div class="d-flex gap-3">
+          <img src="./assests/images/hero/graduate.png" alt="" class="h-75" />
+          <h5>Skill Development</h5>
+        </div>
+        <div style="width: 1px; height: 30px" class="bg-prime"></div>
+
+        <div class="d-flex gap-3">
+          <img src="./assests/images/hero/lifecare.png" alt="" class="h-75" />
+          <h5>Passionate Teaching</h5>
+        </div>
+      </div>
+    </section>
+    <main id="main"></main>
+    <section id="our-programs"></section>
+    <section id="world-members"></section>
+    <section id="testimony"></section>
+    <section id="faq-page"></section>
+    <section id="latest-blog"></section>
+    <div id="footer"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./assests/js/index.js"></script>
+    <script>
+      $("#header").load("components/header.html");
+      $("#main").load("components/main.html");
+      $("#our-programs").load("components/programes.html");
+      $("#world-members").load("components/oppurtunities.html");
+      $("#testimony").load("components/testimony.html");
+      $("#faq-page").load("components/faq.html");
+      $("#latest-blog").load("components/latest-blog.html");
+      $("#footer").load("components/footer.html");
+    </script>
+  </body>
+</html>
